@@ -1,0 +1,15 @@
+Realiza los siguientes programas en lenguaje C#.
+
+- Crea un programa en un archivo llamado Practica_1_1.cs que le pida al usuario su nota de examen y su nota de prácticas, y calcule la nota final como el 70% de la nota del examen más el 30% de la nota de prácticas. La nota debe calcularse en formato entero (sin decimales).
+- Crea un programa en un archivo llamado Practica_1_2.cs que le pida al usuario una temperatura en grados centígrados, y la convierta a grados Fahrenheit, aplicando la fórmula siguiente (y mostrándola como un entero sin decimales). Así, por ejemplo, 30ºC deberían dar 86ºF.
+
+Fahrenheit = Centígrados * 9 / 5 + 32
+
+Para entregar:
+
+Deberás entregar los dos archivos fuente (sin los ejecutables compilados) en un archivo ZIP llamado Practica_1.zip.
+
+IMPORTANTE:
+
+Echa un vistazo a las normas de calificación de trabajos para saber qué tienes que tener en cuenta a la hora de escribir tus programas.
+
