@@ -1,0 +1,33 @@
+Realiza los siguientes programas en lenguaje C#.
+
+Ejercicio 1
+
+Crea un programa en un archivo llamado Practica_2_1_1.cs que le pida al usuario tres temperaturas en grados centígrados, y en función de los valores, muestre uno de estos mensajes:
+
+- "Es verano" (si todas las temperaturas pasan de 25 grados)
+- "Es primavera u otoño" (si alguna temperatura no pasa de 25, pero todas son de al menos 15 grados)
+- "Es invierno" (si alguna temperatura no llega a 15 grados)
+
+Ejemplos de entradas y salidas que debe mostrar:
+
+26 28 30 --> Es verano
+20 30 19 --> Es primavera u otoño
+20 30 12 --> Es invierno
+14 12 20 --> Es invierno
+15 35 20 --> Es primavera u otoño
+
+Ejercicio 2
+
+Crea un programa en un archivo llamado Practica_2_1_2.cs que le pida al usuario dos números enteros y realice un conteo desde el primero hasta el segundo, mostrando cada número en una línea. Deberás tener en cuenta que ese conteo puede ser ascendente o descendente, dependiendo de si el primer número es menor o mayor que el segundo, respectivamente. Si los dos números coinciden, sólo se mostrará ese número.
+
+Ejercicio 3
+
+Crea un programa en un archivo llamado Practica_2_1_3.cs que le pida al usuario dos notas numéricas enteras de 0 a 10. El programa debe pedirle tantas veces como sea necesario cada nota al usuario hasta que sea un valor correcto. Después, mostrará por pantalla la media (entera) de las dos notas.
+
+Para entregar:
+
+Deberás entregar los archivos fuente (sin los ejecutables compilados) en un archivo ZIP llamado Practica_2_1.zip.
+
+IMPORTANTE:
+
+Echa un vistazo a las normas de calificación de trabajos para saber qué tienes que tener en cuenta a la hora de escribir tus programas.
