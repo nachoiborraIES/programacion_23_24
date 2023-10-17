@@ -1,0 +1,45 @@
+Realiza los siguientes programas en lenguaje C#.
+
+Ejercicio 1
+
+Crea un programa en un archivo llamado Practica_2_2_1.cs que le pida al usuario una altura (número positivo mayor que 1) y, con ella, dibuje una figura de 2 picos con esa altura. Así quedaría para una figura de altura 5:
+
+    *        *
+   ***      ***
+  *****    *****
+ *******  *******
+******************
+
+Si la altura indicada no es un número válido, o es inferior o igual a 1, se debe terminar el programa con el mensaje "Altura no válida", sin dibujar nada.
+
+Ejercicio 2
+
+Crea un programa en un archivo llamado Practica_2_2_2.cs que le pida al usuario una secuencia de 5 números, de modo que se asegure de que cada número es mayor que el anterior. Si no lo es, deberá volverlo a pedir repetidamente hasta que lo sea. Asumiremos en este caso que el usuario introducirá siempre números válidos. Al finalizar el proceso el programa mostrará la media de los valores introducidos.
+
+Ejemplo de funcionamiento:
+
+Escribe el 1º número:
+4
+Escribe el 2º número:
+8
+Escribe el 3º número:
+6
+El número introducido debe ser mayor que el anterior.
+Escribe el 3º número:
+9
+Escribe el 4º número:
+14
+Escribe el 5º número:
+10
+El número introducido debe ser mayor que el anterior.
+Escribe el 5º número:
+20
+La media de los valores escritos es 11
+
+Para entregar:
+
+Deberás entregar los archivos fuente (sin los ejecutables compilados) en un archivo ZIP llamado Practica_2_2.zip.
+
+IMPORTANTE:
+
+Echa un vistazo a las normas de calificación de trabajos para saber qué tienes que tener en cuenta a la hora de escribir tus programas.
