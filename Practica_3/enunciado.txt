@@ -1,0 +1,50 @@
+Realiza los siguientes programas en lenguaje C#.
+
+Ejercicio 1
+
+Crea un programa en un archivo llamado Practica_3_1.cs en el que vas a calcular tu nota del primer trimestre:
+
+Le pediremos al usuario cuántas prácticas ha realizado
+Después, le pediremos tantas notas de prácticas como haya dicho
+A continuación, le pediremos las notas de los dos exámenes
+Finalmente, mostraremos la nota final, como el 70% de la media de exámenes más el 30% de la media de prácticas. Si alguna de las dos medias no llega al 4, la nota final será como mucho de 4 (se deberá escoger entre el menor valor entre la nota calculada y 4). Puedes emplear la función Math.Min en este paso si lo consideras útil.
+La nota final se mostrará redondeada a 2 decimales
+
+Ejemplos de funcionamiento:
+
+Indica cuántas prácticas has realizado: 4
+Introduce la nota de tus 4 prácticas:
+6
+7
+8
+9
+Nota del primer examen: 7,5
+Nota del segundo examen: 6,4
+Tu nota final es 7.12
+-------------------------------------------
+Indica cuántas prácticas has realizado: 3
+Introduce la nota de tus 3 prácticas:
+6
+10
+8
+Nota del primer examen: 3,25
+Nota del segundo examen: 3,5
+Tu nota final es 4.00
+
+Ejercicio 2
+
+Crea un programa en un archivo llamado Practica_3_2.cs que le pida al usuario una temperatura (real) y una unidad ('C' para Celsius, 'F' para Fahrenheit). El programa debe convertir la temperatura a la otra unidad. Por ejemplo, si el usuario escribe temperatura = 32 y unidad = 'C', el programa debe convertir 32ºC a grados Fahrenheit. Deberás tener en cuenta que:
+
+Si la temperatura no es un dato correcto (se produce una excepción) se la deberemos volver a pedir tantas veces como sea necesario
+Si la unidad no es 'C' o 'F', mostraremos el mensaje de "Unidad no válida" y finalizaremos el programa
+La conversión debe mostrarse con 1 decimal
+La fórmula para convertir de una unidad a otra es:
+Fahrenheit = Centígrados * 9 / 5 + 32
+
+Para entregar:
+
+Deberás entregar los archivos fuente (sin los ejecutables compilados) en un archivo ZIP llamado Practica_3.zip.
+
+IMPORTANTE:
+
+Echa un vistazo a las normas de calificación de trabajos para saber qué tienes que tener en cuenta a la hora de escribir tus programas.
