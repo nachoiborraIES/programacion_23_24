@@ -1,0 +1,32 @@
+Queremos desarrollar un programa que gestione las habitaciones de un hotel. Crearemos para ello un archivo llamado Practica_4_1.cs que cumpla los requisitos que se detallan a continuación.
+
+Los datos de cada habitación los guardaremos en un struct habitacion que tendrá los siguientes campos:
+
+- Número de habitación (entero)
+- Precio por noche (real)
+- Descripción de la habitación (texto)
+- Servicios de la habitación: será otro struct con los siguientes campos:
+   -  Si dispone o no de WiFi (booleano)
+   - Número de huéspedes permitido (entero)
+
+El programa creará un array sobredimensionado para almacenar hasta 100 habitaciones, y mostrará repetidamente al usuario un menú con estas opciones:
+
+1. Nueva habitacion: añadirá una nueva habitación al final de las existentes. Si hay hueco en el array, le pediremos todos los datos de la habitación al usuario y la añadiremos. Como únicos requisitos debemos comprobar dos cosas:
+Que el número de habitación no exista ya en el array. Si existe terminaremos este paso sin añadir la habitación.
+Que el número de huéspedes permitido sea un número válido entre 1 y 5 (ambos inclusive). De lo contrario tendremos que volverlo a pedir hasta que sea correcto.
+
+2. Listar habitaciones: mostraremos el número de habitación, precio por noche y descripción de todas las habitaciones almacenadas
+
+3. Buscar habitación: le pediremos al usuario un número de habitación y mostraremos toda la información de esa habitación, o el mensaje "Habitación no encontrada" si no se encuentra en el array.
+
+4. Filtrar habitaciones: le pediremos al usuario un precio máximo por noche y mostraremos el número de habitación, precio por noche y descripción de las habitaciones cuyo precio por noche no supere el indicado por el usuario. 
+
+0. Salir
+
+Para entregar:
+
+Deberás entregar el archivo fuente (sin el ejecutable compilado) en un archivo ZIP llamado Practica_4_1.zip.
+
+IMPORTANTE:
+
+Echa un vistazo a las normas de calificación de trabajos para saber qué tienes que tener en cuenta a la hora de escribir tus programas.
