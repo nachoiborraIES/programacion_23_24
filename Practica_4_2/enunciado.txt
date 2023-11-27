@@ -1,0 +1,15 @@
+Para esta práctica tomaremos como base la solución propuesta para la práctica anterior (práctica 4.1), que puedes encontrar en el repositorio de GitHub del curso. Se pide ampliar la práctica con estas opciones adicionales en el menú:
+
+5. Ordenar habitaciones: se ordenará el array de habitaciones por precio (de menor a mayor) y se mostrarán por pantalla las 3 habitaciones más baratas que haya (o menos, si no hay 3 habitaciones en el array).
+
+6. Búsqueda avanzada: le pediremos al usuario un texto y mostraremos la información de las habitaciones cuya descripción contenga el texto buscado (sin importar mayúsculas o minúsculas). Mostraremos el número de habitación, precio por noche y el fragmento de la descripción que contenga el texto buscado y 10 caracteres anteriores y posteriores (si existen), con puntos suspensivos. Por ejemplo, si buscamos el texto "aire acondicionado", podríamos mostrar esto en la descripción:
+
+...ispone de aire acondicionado en la hab...
+
+Para entregar:
+
+Deberás entregar el archivo fuente en un archivo ZIP llamado Practica_4_2.zip.
+
+IMPORTANTE:
+
+Echa un vistazo a las normas de calificación de trabajos para saber qué tienes que tener en cuenta a la hora de escribir tus programas.
