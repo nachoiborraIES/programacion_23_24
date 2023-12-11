@@ -1,0 +1,21 @@
+Para esta práctica tomaremos como base la solución propuesta para la práctica anterior (práctica 4.2), que puedes encontrar en el repositorio de GitHub del curso. Se pide modularizar la práctica empleando, al menos, las siguientes funciones:
+
+- MostrarMenu: no recibirá ningún parámetro, y se dedicará a mostrar el menú de opciones, recoger la opción que elige el usuario y devolver (return) esa opción elegida.  Invocaremos a esta función desde el Main, al inicio del do..while, cuando se muestra el menú y se recoge la opción.
+- NuevaHabitacion: recibirá como parámetros el array de habitaciones y la cantidad (esta última pasada por referencia), y se encargará de realizar todo el código de la opción 1 del menú (pedir los datos, comprobar la validez y realizar la inserción de la habitación en el array). Como resultado devolverá un código numérico que será 0 si se ha insertado correctamente la habitación, 1 si no se ha podido insertar porque ya existía el número de habitación o 2 si no se ha podido añadir porque estaba el array lleno. En el Main, desde dicha opción 1 simplemente nos limitaremos a invocar a esta función con los dos parámetros adecuados para que haga su tarea, recogeremos el resultado y mostraremos un mensaje por pantalla de acuerdo a ese resultado.
+- ListarHabitaciones: recibirá como parámetros el array de habitaciones y la cantidad, y realizará lo mismo que hacía la opción 2 del menú. Invocaremos a esta función desde dicha opción 2.
+- BuscarHabitacion: recibirá como parámetros el array de habitaciones, la cantidad y un número de habitación, y realizará una tarea similar a la que hacía la opción 3 del menú. En dicha opción nos limitaremos a pedirle al usuario el número de habitación e invocar a esta función con ese número.
+- FiltrarHabitaciones: recibirá como parámetros el array de habitaciones, la cantidad y un precio máximo por noche, y realizará una tarea similar a la opción 4 del menú. En dicha opción le pediremos al usuario el precio máximo e invocaremos a esta función con ese precio
+- OrdenarHabitaciones: recibirá como parámetros el array de habitaciones y la cantidad, y realizará lo mismo que hacía la opción 5 del menú. Invocaremos a esta función desde dicha opción.
+- BusquedaAvanzada: recibirá como parámetro el array de habitaciones, la cantidad y un texto, y realizará algo similar a lo que hacía la opción 6 del menú. En dicha opción le pediremos al usuario un texto a buscar e invocaremos a esta función con ese texto.
+
+En el caso de que alguna función sea demasiado larga, o alguna tarea se repita en varios puntos del programa, se deberá crear una función aparte para modularizar esa tarea. Puede resultar adecuada, por ejemplo, una función que muestre los datos de la habitación i del array (número de habitación, precio y descripción), y usarla desde las funciones ListarHabitaciones, BuscarHabitacion, FiltrarHabitaciones... ya que todas muestran un listado con información similar de cada habitación. Incluso se podría reaprovechar en cierto modo para la función BusquedaAvanzada.
+
+De este modo, el código de cada función deberá ser corto (hasta 50 líneas de código como máximo, aproximadamente), y el Main se limitará a  poco más que mostrar el menú e invocar a la función correspondiente, según cada opción.
+
+Para entregar:
+
+Deberás entregar el archivo fuente en un archivo ZIP llamado Practica_5_1.zip.
+
+IMPORTANTE:
+
+Echa un vistazo a las normas de calificación de trabajos para saber qué tienes que tener en cuenta a la hora de escribir tus programas. A partir de esta práctica también se incluye una penalización por la incorrecta modularización del código.
