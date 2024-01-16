@@ -1,0 +1,27 @@
+Realiza los siguientes programas en lenguaje C#.
+
+Ejercicio 1
+
+Crea un programa en un archivo llamado Recursividad.cs que contenga los siguientes elementos: 
+
+- Una función recursiva llamada DigitosAscendentes que reciba como parámetro un número y devuelva un booleano indicando si tiene sus dígitos en orden ascendente o no. Por ejemplo, para el número 122368 debería decir que sí, pero para el número 46673 debería decir que no.
+- Una función recursiva llamada TransformarTexto que reciba como parámetro un texto y lo devuelva intercambiando mayúsculas por minúsculas. Por ejemplo, si el texto de entrada es "Hola, Buenas", el texto resultado deberá ser "hOLA, bUENAS".
+- Un programa principal Main que pruebe las dos funciones con al menos 3 casos diferentes cada una.
+
+Ejercicio 2
+
+Crea un programa en un archivo llamado SaltoTrampolin.cs en el que le pasemos al programa principal (Main), a través de los args de entrada, una serie de 5 notas enteras (de 0 a 10) de un concurso de saltos de trampolín. El programa debe comprobar que las 5 notas son válidas (es decir, que son números enteros, y que están entre 0 y 10). Si falta alguna nota o no son válidas, mostrará el mensaje de "Notas incorrectas" y finalizará. Si todas son válidas, debe descartar la menor y la mayor de ellas, y sacar la nota media con las tres notas restantes. La nota media se mostrará por pantalla redondeada con 2 decimales, en color verde.
+
+Se valorará la modularidad del código, para que no se hagan todas las tareas desde el programa principal y se divida el problema en las subtareas adecuadas: validar notas, descartar notas y calcular media.
+
+Ejemplo de uso (incluyendo llamada desde línea de comandos)
+
+SaltoTrampolin 9 8 10 7 8
+Nota final: 8,33
+Para entregar:
+
+Deberás entregar los archivos fuente en un ZIP llamado Practica_5_2.zip.
+
+IMPORTANTE:
+
+Echa un vistazo a las normas de calificación de trabajos para saber qué tienes que tener en cuenta a la hora de escribir tus programas. Recuerda que también se incluye una penalización por la incorrecta modularización del código.
