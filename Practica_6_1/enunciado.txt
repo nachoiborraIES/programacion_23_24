@@ -1,0 +1,22 @@
+Se pide crear un proyecto en Visual Studio que adapte la práctica 5.1 como se explica a continuación. Aquí podéis encontrar posibles soluciones completas a esa práctica.
+
+Crearemos un proyecto Visual Studio llamado HabitacionesHotel con dos ficheros fuente:
+
+- Principal: donde colocaremos todo el contenido de la práctica 5.1, que luego modificaremos
+- Habitacion, donde definiremos una clase Habitacion que sustituirá a los structs del ejercicio anterior (los eliminaremos de la clase Principal). La clase Habitacion tendrá como atributos (privados) el número de habitación, la descripción, el precio por noche y el número de huéspedes permitido. Eliminamos con respecto a la versión anterior si tiene o no WiFi. Todos los datos se le pasarán como parámetro al constructor, y definiremos getters/setters o bien propiedades get/set para leer/establecer el valor de los mismos. Para todos los datos numéricos, se deberá comprobar que el valor sea correcto y si no lo es, se dejará a un valor por defecto correcto: el número de habitación debe estar entre 1 y 100 (inclusive), el número de huéspedes entre 1 y 5 (también inclusive) y el precio debe ser positivo. Todo esto deberemos comprobarlo en los setters. Añadiremos también  un método Mostrar que mostrará toda la información de la habitación con este formato
+Habitación numero, descripción, huéspedes, precio
+Ejemplo: Habitación 2, Suite familiar, 4 huéspedes, 125 euros/noche
+
+En el programa principal se creará un array sobredimensionado de objetos de tipo Habitacion. En cuanto a las opciones del menú, de las que había en el ejercicio 5.1 dejaremos las siguientes:
+
+1. Insertar habitación al final de las existentes. Deberemos comprobar la validez de los datos (números correctos), y si el número de habitación está repetido, no se insertará la habitación.
+2. Listar habitaciones, que ordenará las habitaciones por número (en orden ascendente) mostrando toda la información de cada una con su método Mostrar
+3. Buscar habitación, donde le pediremos al usuario el número y buscaremos y mostraremos los datos de la habitación coincidente, o el mensaje "Habitación no encontrada" en caso contrario.
+4. Filtrar habitaciones, donde le pediremos al usuario un precio máximo y buscaremos las habitaciones que no excedan de dicho precio, mostrando su información con su método Mostrar. En caso de no encontrar coincidencias mostraremos el mensaje "No se encontraron coincidencias".
+0. Salir
+
+Deberás reutilizar/adaptar las funciones que hiciste en la práctica 5.1 para esta nueva versión, dejándolas todas en la clase Principal (salvo el método Mostrar, que corresponde a la clase Habitacion). Elimina los métodos que ya no necesites, de las funcionalidades que se han suprimido en esta práctica.
+
+Para entregar:
+
+Deberás entregar el proyecto Visual Studio comprimido con todos los archivos que contenga (comprime la carpeta entera), en un archivo llamado Practica_6_1.zip
