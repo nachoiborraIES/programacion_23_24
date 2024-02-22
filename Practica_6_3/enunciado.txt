@@ -1,0 +1,52 @@
+En esta práctica vamos a simular las etapas de un rally. Crearemos para ello un proyecto de consola Visual Studio llamado Rally.
+
+Estructura de clases (3 puntos)
+
+Crearemos la siguiente estructura de clases e interfaces:
+
+- Clase Vehiculo, abstracta. Tendrá como atributos la marca del vehículo y su velocidad máxima en Km/h (entero). Le pasaremos ambas cosas en el constructor parametrizado. Tendrá las siguientes subclases:
+  - Moto: añadirá como atributo la cilindrada, que se le pasará como parámetro al constructor
+  - Coche: añadirá como atributos la potencia en caballos (entero) y el peso en toneladas (real). Ambas cosas también se asignarán en el constructor
+  - Debemos apoyarnos en el constructor de la clase padre para rellenar la información de cada clase.
+
+- Clase Piloto. Cada piloto tendrá un nombre, y un vehículo que conducirá (atributo de tipo Vehiculo). Asignaremos ambas cosas en el constructor. También tendrá un atributo con el tiempo total en minutos acumulado en el rally, y el tiempo total en minutos que tardó en la última etapa. Ambas cosas se asignarán a 0 en el constructor.
+- Clase Etapa. Cada etapa del rally tendrá una ciudad de origen y destino (strings) y una distancia en Km (entero). Todo se asignará en el constructor
+- Interfaz IDibujable, con un método Dibujar, sin parámetros y de tipo void. Tanto la clase Etapa como la clase Piloto implementarán esta interfaz.
+
+La clase Rally (4,5 puntos)
+
+Para gestionar el rally crearemos una clase Rally, que tendrá como atributos un array de 10 etapas y un array de 10 pilotos, junto con un contador de etapa que inicialmente será 0. DIspondrá de los siguientes métodos:
+
+- void Inicializar(): creará a mano en el código las 10 etapas y los 10 pilotos, cada uno con su vehículo (procurando que haya tanto coches como motos).
+- bool SiguienteEtapa(): simulará la siguiente etapa (la que indique el contador). Para ello:
+Asignará a cada vehículo de cada piloto una velocidad media aleatoria, entre el 80% de su velocidad máxima y su velocidad máxima (en Km/h)
+Con ello calculará el tiempo en minutos que tarda el vehículo en completar la distancia de la etapa, y lo sumará al tiempo total acumulado de ese piloto.
+Se incrementará el contador de etapa para pasar a la siguiente. Si ya no hay más etapas se devolverá false (en caso contrario se devolverá true).
+Mostrará por pantalla (al inicio de la consola) la información completa de la etapa, en color verde, usando el método Dibujar de la interfaz IDibujable. Por ejemplo:
+
+Etapa 1: Riyadh - Yambu (212 Km)
+
+- void DibujarClasificacion(): ordenará los pilotos de menor a mayor tiempo total acumulado, y los mostrará por pantalla en dos tablas: una a la izquierda con los pilotos de coches (en azul) y otra a la derecha con los pilotos de motos (en rojo). En cada piloto se mostrará su nombre, el tiempo en horas y minutos de la etapa actual y el tiempo acumulado total de horas y minutos. Todo esto se hará desde el método Dibujar de cada piloto. Por ejemplo:
+
+COCHES                                             MOTOS
+1. Carlos Sainz: 02h 12m - 06h 24m                 1. Toby Price: 02h 34m - 06h 53m
+2. Stephane Peterhansel: 02h 01m - 06h 41m         2. Pablo Quintanilla: 02h 22m - 07h 21m
+3. Sebastian Loeb: 02h 31m - 07h 12m               3. Skyler Howes: 02h 41m - 07h 37m
+...                                                ...
+
+El programa principal (1,5 puntos)
+
+Desde el programa principal (clase Program), haremos lo siguiente en la función Main:
+
+- Crearemos una instancia de la clase Rally y llamaremos a su método Inicializar.
+- Llamaremos al método DibujarClasificacion del Rally para mostrar la clasificación inicial de pilotos
+- Debajo de la clasificación mostraremos un menú de opciones al usuario:
+  - Si pulsa la tecla S se llamará al método SiguienteEtapa de la clase Rally, que mostrará por pantalla los datos de la siguiente etapa y la clasificación actualizada. Si ya no hay más etapas que mostrar, inhabilitaremos esta opción (no tendrá efecto las siguientes veces que se pulse)
+  - Si pulsa la tecla R resetearemos el rally (volveremos a reinicializar los datos de pilotos, coches, etc para simular otro rally)
+  - Si pulsa la tecla Q terminará el programa
+
+Consideraciones adicionales
+
+- Puedes añadir a cada clase los métodos adicionales que consideres para modularizar correctamente el código, incluyendo getters/setters y otros métodos. Por ejemplo, puede serte útil en la clase Piloto un método estático  HorasMinutos(int) que reciba como parámetro un tiempo en minutos y devuelva un string formateado con horas y minutos, como en los ejemplos anteriores. La puedes llamar para pasar a horas y minutos tanto el tiempo de cada etapa como el tiempo total acumulado.
+- Deberás entregar un fichero ZIP con el proyecto completo, incluyendo un diagrama de clases, que se calificará sobre 1 punto.
+- Se aplicarán las mismas penalizaciones habituales de otras prácticas: comentarios, longitud de línea, repetición de código, etc.
