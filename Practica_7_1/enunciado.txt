@@ -1,0 +1,26 @@
+Se pide crear un proyecto en Visual Studio llamado Personajes con los siguientes elementos
+
+1. Clase Personaje y subtipos
+
+Crearemos una clase padre abstracta llamada Personaje, que almacenará los datos generales de cualquier personaje del programa: su nombre y su nivel de vida (entero de 0 a 100). En el constructor asignaremos el nombre y el nivel de vida. Distinguiremos 3 tipos de personajes:
+
+- Los Arqueros, de los que guardaremos la longitud de su arco
+- Los Guerreros, de los que guardaremos el material de su espada
+- Los Magos de los que guardaremos su poder mágico (entero de 1 a 10)
+
+Añadid en cada clase los getters/setters y métodos que creáis necesarios, junto con el correspondiente método ToString para sacar la información de cada personaje en una línea, indicando también el tipo de personaje que es (arquero, guerrero o mago).
+
+2. Programa principal
+
+En el programa principal se creará una lista genérica vacía de personajes y se pedirá repetidamente al usuario que elija una de las siguientes opciones del menú:
+
+- Nuevo personaje: pediremos al usuario por teclado que elija un tipo de personaje e introduzca sus datos, añadiendo el nuevo personaje al final de la lista. Deberemos verificar que el nivel de vida sea válido y correcto (entre 0 y 100), repitiendo el dato hasta que lo sea. Al finalizar, mostrará el listado actualizado de personajes.
+- Personajes por nivel de vida: ordenará el listado de mayor a menor nivel de vida, y mostrará los datos de los personajes.
+- Quitar personaje: le pedirá al usuario que escriba el nombre de un personaje y, si se encuentra en la lista, lo eliminará y mostrará la lista resultante. Si no se encuentra mostrará "No se encuentra el personaje" y no mostrará nada más. Si hay varios personajes con el mismo nombre, se borrarán todos ellos.
+- Personajes con poca vida: mostrará los personajes del listado que tengan menos de 10 puntos de vida. Si no hay ningún personaje con esas características, mostraremos el mensaje "Todos los personajes tienen vida suficiente".
+- Personaje con más vida: mostrará los datos del personaje con más vida de la lista. Si no hay personajes, mostrará "La lista está vacía".
+- Salir
+
+Para entregar:
+
+Deberás entregar el proyecto Visual Studio comprimido con todos los archivos que contenga (comprime la carpeta entera), en un archivo llamado Practica_7_1.zip
