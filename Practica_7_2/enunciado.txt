@@ -1,0 +1,35 @@
+Ejercicio 1
+
+Se pide crear un proyecto en Visual Studio llamado FlotaCoches que permita gestionar la flota de coches de una empresa y sus mantenimientos. Crearemos una clase Coche para gestionar los distintos coches, de los que guardaremos su matrícula (clave identificativa), marca y modelo (por ejemplo, marca = "Ford", modelo = "Focus 1.8 TDI"). Cada coche tendrá una lista de mantenimientos recibidos, para lo que definiremos una clase Mantenimiento donde anotaremos la fecha (string), la descripción de lo que se hizo (por ejemplo, "Cambio de neumáticos traseros") y el precio (real). Un coche podrá tener varios mantenimientos acumulados (usaremos una lista para ello).
+
+En el programa principal, se pide crear un diccionario genérico de coches, cuyas claves serán sus matrículas. Estos datos los meteremos a mano en el código (sin pedir nada al usuario), dando de alta al menos 3 o 4 coches en el diccionario. En el constructor de cada coche, convendrá inicializar su lista de mantenimientos a una lista vacía. Después, mostraremos al usuario un menú con estas opciones:
+
+- Nuevo mantenimiento: pediremos al usuario que escriba la matrícula del coche y, si se encuentra en el diccionario, le pediremos los datos del nuevo mantenimiento (fecha, descripción y precio) y lo daremos de alta en el coche seleccionado. Si el coche no se encuentra mostraremos el mensaje de "Coche no encontrado".
+- Coche más problemático: mostrará la información del coche que más precio acumulado de mantenimientos lleva. Se mostrará la información tanto del coche (matrícula, marca y modelo) como de todos los mantenimientos que lleva acumulados, incluyendo el precio total
+- Listar coches: mostrará los coches que hay en el diccionario actualmente (sólo matrícula, marca y modelo)
+- Reemplazar coche: pedirá al usuario que introduzca una matrícula de coche y, si se encuentra, lo eliminará del diccionario y le pedirá que introduzca los datos del nuevo coche (matrícula, marca y modelo). El nuevo coche se dará de alta en el diccionario siempre que su matrícula no coincida con la de ningún otro coche. Además, se inicializará su lista de mantenimientos a una lista vacía.
+- Salir
+
+Ejercicio 2
+
+Tenemos que doblar una serie de calcetines que hemos recogido de la colada. Los calcetines aparecen numerados con un número entero que identifica las parejas. Así, dos calcetines con el mismo número son similares, y pueden agruparse.
+
+Se pide realizar un programa en un proyecto Calcetines que lea de teclado una secuencia de números de calcetín separados por espacios, como por ejemplo:
+
+1 2 1 1 1 3 2 3
+
+El programa debe, utilizando conjuntos, indicar cuántos modelos diferentes de calcetines hay, y cuál es el número máximo de calcetines sueltos que hay en un momento determinado. Para esto último, supondremos que los calcetines se procesan en orden, y que en cuanto se juntan dos con el mismo número, se doblan y se guardan. En el ejemplo anterior, la secuencia sería así:
+
+Sacamos el calcetín 1 (ahora mismo hay 1 calcetín distinto)
+Sacamos el calcetín 2 (ahora mismo hay 2 calcetines distintos: 1 y 2)
+Sacamos el calcetín 1 y lo agrupamos con el primero (ahora mismo hay 1 calcetín distinto: el 2)
+Sacamos otro calcetín 1 (ahora mismo hay 2 calcetines distintos: 1 y 2)
+Sacamos otro calcetín 1 y lo agrupamos con el anterior (ahora mismo hay 1 calcetín distinto: el 2)
+Sacamos el calcetín 3 (ahora mismo hay 2 calcetines distintos: 2 y 3)
+Sacamos el calcetín 2 (ahora mismo hay 1 calcetín distinto: el 3)
+Sacamos el calcetín 3 y lo agrupamos con el 3 anterior (ahora mismo no hay calcetines distintos)
+El número máximo de calcetines sin emparejar que ha habido es de 2.
+
+Para entregar:
+
+Deberás entregar los dos proyectos Visual Studio comprimidos en un único archivo ZIP o similar, cada uno en su carpeta. El archivo ZIP se llamará Practica_7_2.zip
