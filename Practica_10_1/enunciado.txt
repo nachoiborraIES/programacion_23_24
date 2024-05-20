@@ -1,0 +1,30 @@
+Vamos a desarrollar un proyecto llamado Valoraciones que gestionará las valoraciones de un conjunto de usuarios. Para ello, crearemos los siguientes elementos previos:
+
+- Enumeración llamada Valoracion, con los valores MALA, REGULAR, BUENA, MUY_BUENA y EXCELENTE, numeradas de 0 a 4 respectivamente.
+- Clase Usuario que almacenará los datos de cada usuario que quiere dejar una valoración: su nombre, e-mail, fecha de nacimiento (tipo DateTime) y valoración que deja (tipo Valoracion). Define un constructor que dé valor a todos los atributos, y un método ToString que muestre la información en una línea, con el formato que quieras. Además, puedes añadir los métodos o propiedades get/set que consideres.
+- Las valoraciones de los usuarios se guardarán en un fichero de texto llamado valoraciones.txt, con este formato:
+
+nombre;email;fecha_nacimiento;valoracion
+
+donde la fecha de nacimiento se almacenará en formato dd/MM/yyyy, y la valoración se guardará en su formato numérico (del 0 al 4).
+
+Programa principal:
+
+Al inicio del programa, se leerán las valoraciones del fichero valoraciones.txt y se almacenarán en una lista (de objetos de tipo Usuario). Después, se podrán añadir más valoraciones a la lista, escribiendo por separado el nombre, e-mail, fecha de nacimiento (con el formato dd/MM/yyyy) y valoración (a elegir entre las disponibles). Si la fecha de nacimiento o la valoración no es correcta, se mostrará un mensaje de error y se descartará la valoración, pasando a leer la siguiente. Este proceso finalizará cuando el usuario escriba un nombre vacío.
+
+Una vez actualizado el listado de valoraciones de usuarios, se guardará de nuevo en el fichero valoraciones.txt, y se mostrarán por pantalla las siguientes estadísticas, usando programación funcional:
+
+- Porcentaje de valoraciones de cada tipo con respecto al total. Deberemos obtener, por ejemplo, cuántas valoraciones han sido de tipo MALA y calcular su porcentaje respecto al total, y lo mismo para el resto. Obtendremos una salida como esta:
+
+Porcentajes de valoraciones:
+15% MALA
+25% REGULAR
+20% BUENA
+30% MUY_BUENA
+10% EXCELENTE
+
+- Nombres de los usuarios que han dejado una valoración EXCELENTE, separados por comas
+- Listado de nombres de usuarios ordenados de más joven a más viejo
+- Diferencia de edad, en días, entre el usuario más joven y el más viejo
+
+Se valorará, como siempre, la modularización correcta del código, para delegar en funciones auxiliares cada uno de estos apartados.
